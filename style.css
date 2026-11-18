@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9fc;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.store-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+}
+
+.controls-section {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+#searchInput, #categoryFilter {
+    flex: 1;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    outline: none;
+    background: #fff;
+}
+
+#searchInput:focus, #categoryFilter:focus {
+    border-color: #007bff;
+}
+
+.counter-text {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+/* Two Column Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* Product Card */
+.product-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.product-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.category-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    background-color: #edf2f7;
+    color: #4a5568;
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.product-price {
+    font-size: 15px;
+    font-weight: 700;
+    color: #2b6cb0;
+}
+
+.no-products {
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    color: #718096;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+}
+
+.hidden {
+    display: none;
+}

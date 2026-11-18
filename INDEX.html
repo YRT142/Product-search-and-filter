@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Online Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="store-container">
+        <h1>Quick Store</h1>
+
+        <!-- Search and Filter Controls -->
+        <div class="controls-section">
+            <input type="text" id="searchInput" placeholder="Search products by name...">
+            
+            <select id="categoryFilter">
+                <option value="ALL">All Categories</option>
+                <option value="ELECTRONICS">Electronics</option>
+                <option value="STATIONERY">Stationery</option>
+                <option value="FASHION">Fashion</option>
+            </select>
+        </div>
+
+        <!-- Product Counter Status -->
+        <p id="productCounter" class="counter-text"></p>
+
+        <!-- Product Grid (2 columns) -->
+        <div id="productGrid" class="product-grid"></div>
+
+        <!-- No Products Found Message -->
+        <div id="noProductsMsg" class="no-products hidden">
+            No products found.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
